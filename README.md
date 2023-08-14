@@ -475,13 +475,13 @@ The application includes the following features:
 2. Clone this repository or download the source code.
 
 ```bash
-git clone
+git clone https://github.com/manir22sust/gatsby_static_site_generator.git
 ```
 
 3. Open a terminal and navigate to the project directory.
 
 ```bash
-cd
+cd gatsby_static_site_generator
 ```
 
 4. Run the following command to install the dependencies:
