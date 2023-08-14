@@ -13,98 +13,91 @@ This readme provides an overview of the content and structure, along with instru
 
 ## Table of Contents
 
-- Getting Started
-- Folder Structure
-- Creating Your First Page
-- Error Page
-- Nested Structure
-- Links
-- Navbar
-- Layout Component
-- CSS Module Introduction
-- Inline CSS
-- Global CSS
-- CSS Naming Issues
-- CSS Modules
-- Styled-Components
-- House Cleaning
-- Styles
-- Footer
-- Contact Page
-- Assets And Icons
-- Navbar Setup
-- Navbar Logic
-- Gatsby Image Info
-- Sandbox Setup
-- Install Plugin
-- Static Image Setup
-- Shared Props And Options
-- Options Example
-- All Layouts
-- Height
-- About Page
-- Hero Page
-- Gatsby And GraphQL- Introduction
-- Gatsby DataLayer In A - Nutshell
-- GraphiQL Interface
-- SiteMetadata
-- First Query
-- Explorer
-- Static Query Vs Page Query
-- UseStaticQuery Hook - Code - Exporter
-- UseStaticQuery, GraphQL - - From Scratch
-- Field Alias
-- Query Keyword, Name And - Gatsby Clean
-- Page Query
-- Install- SOURCE-FILESYSTEM-Plugin
-- AllFile Field
-- Query Arguments
-- Static Path Fix
-- File-Field
-- SourceInstanceName
-- Argument
-- Gallery Setup
-- GatsbyImageData
-- Field
-- Render Gallery
-- GetImage
-- Helper Function
-- Local VS External Data
-- Headless CMS
-- Contentful Setup
-- Connect Gatsby
-- Contentful
-- ENV Variables
-- AllContentfulRecipe
-- Field
-- AllRecipes Component
-- RecipesList Component
-- Featured Recipes
-- Utils Setup
-- Helper Function
-- TagsList
-- Tags Page
-- Recipe Template Page Setup
-- Recipe Template Page
-- Walkthrough
-- Slugify
-- Query Variables
-- Recipe Template Query
-- Recipe Template Return
-- GATSBY-NODE.JS Setup
-- Create Tag Pages
-- Programmatically
-- Tag Template Return
-- Fonts
-- Contact Form
-- Favicon
-- SEO Setup
-- SEO - Props
-- SEO - Complete
-- Netlify Info
-- Netlify - Drag And Drop
-- Continuous Deployment
-- Webhooks
+- [Getting Started](#getting-started)
+- [Folder Structure](#folder-structure)
+- [Creating Your First Page](#creating-your-first-page)
+- [Error Page](#error-page)
+- [Nested Structure](#nested-structure)
+- [Links](#links)
+- [Navbar](#navbar)
+- [Layout Component](#layout-component)
+- [CSS Module Introduction](#css-module-introduction)
+- [Inline CSS](#inline-css)
+- [Global CSS](#global-css)
+- [CSS Naming Issues](#css-naming-issues)
+- [CSS Modules](#css-modules)
+- [Styled-Components](#styled-components)
+- [House Cleaning](#house-cleaning)
+- [Styles](#styles)
+- [Footer](#footer)
+- [Contact Page](#contact-page)
+- [Assets And Icons](#assets-and-icons)
+- [Navbar Setup](#navbar-setup)
+- [Navbar Logic](#navbar-logic)
+- [Gatsby Image Info](#gatsby-info)
+- [Sandbox Setup](#sandbox-setup)
+- [Install Plugin](#install-plugin)
+- [Static Image Setup](#static-image-setup)
+- [Shared Props And Options](#shared-props-and-options)
+- [Options Example](#options-example)
+- [All Layouts](#all-layouts)
+- [Height](#height)
+- [About Page](#about-page)
+- [Hero Page](#hero-page)
+- [Gatsby And GraphQL- Introduction](#gatsby-and-graphql-introduction)
+- [Gatsby DataLayer In A - Nutshell](#gatsby-datalayer-in-a-nutshell)
+- [GraphiQL Interface](#graphiql-interface)
+- [SiteMetadata](#sitemetadata)
+- [First Query](#first-query)
+- [Explorer](#explorer)
+- [Static Query Vs Page Query](#static-query-vs-page-query)
+- [UseStaticQuery Hook - Code - Exporter](#usestaticquery-hook---code-exporter)
+- [UseStaticQuery, GraphQL - - From Scratch](#usestaticquery-graphql---from-scratch)
+- [Field Alias](#field-alias)
+- [Query Keyword, Name And - Gatsby Clean](#query-keyword-name-and-gatsby-clean)
+- [Page Query](#page-query)
+- [Install- SOURCE-FILESYSTEM-Plugin](#install-source-filesystem-plugin)
+- [AllFile Field](#allfile-field)
+- [Query Arguments](#query-arguments)
+- [Static Path Fix](#static-path-fix)
+- [File Field](#file---field)
+- [SourceInstanceName-Argument](#sourceinstancename---argument)
+- [Gallery Setup](#gallery-setup)
+- [GatsbyImageData-Field](#gatsbyimagedata---field)
+- [Render Gallery](#render-gallery)
+- [GetImage Helper Function](#getimage---helper-function)
+- [Local VS External Data](#local-vs-external-data)
+- [Headless CMS](#headless-cms)
+- [Contentful Setup](#contentful-setup)
+- [Connect Gatsby-Contentful](#connect-gatsby---contentful)
+- [ENV Variables](#env-variables)
+- [AllContentfulRecipe Field](#allcontentfulrecipe---field)
+- [AllRecipes Component](#allrecipes-component)
+- [RecipesList Component](#recipeslist-component)
+- [Featured Recipes](#featured-recipes)
+- [Utils Setup](#utils-setup)
+- [Helper Function](#helper-function)
+- [TagsList](#tagslist)
+- [Tags Page](#tags-page)
+- [Recipe Template Page Setup](#recipe-template-page-setup)
+- [Recipe Template Page Walkthrough](#recipe-template-page-walkthrough)
+- [Slugify](#slugify)
+- [Query Variables](#query-variables)
+- [Recipe Template Query](#recipe-template-query)
+- [Recipe Template Return](#recipe-template-return)
+- [GATSBY-NODE.JS Setup](#gatsby-nodejs-setup)
+- [Create Tag Pages Programmatically](#create-tag-pages-programmatically)
+- [Tag Template Return](#tag-template-return)
+- [Fonts](#fonts)
+- [Contact Form](#contact-form)
+- [Favicon](#favicon)
+- [SEO Setup](#seo-setup)
+- [SEO - Props](#seo---props)
+- [SEO - Complete](#seo---complete)
+- [Netlify Info](#netlify-info)
+- [Netlify - Drag And Drop](#netlify---drag-and-drop)
+- [Continuous Deployment](#continuous-deployment)
+- [Webhooks](#webhooks)
 
 ## Gatsby Info
 
@@ -458,7 +451,7 @@ The application includes the following features:
 
 2. Recipes details: Users can view detailed information about a specific Recipe.
 
-3. Cart: Users can add Recipe to a shopping cart.
+3. Cart: Users can add Recipe to a order cart.
 
 4. Checkout: Users can proceed to the checkout process to complete their purchase.
 5. Secure card payments / Cash payments: Users can make secure payments using credit cards or choose cash on delivery.
