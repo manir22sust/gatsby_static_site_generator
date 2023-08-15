@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import Layout from "../components/Layout";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -12,7 +11,7 @@ export default function Home() {
             src="../assets/images/main.jpeg"
             alt="eggs"
             className="hero-img"
-            placeholder="tracedSVG"
+            placeholder="DOMINANT_COLOR"
             layout="fullWidth"
           ></StaticImage>
 
