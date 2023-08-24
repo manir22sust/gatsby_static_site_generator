@@ -1,9 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
+import RecipesList from "../components/RecipesList";
 
-const About = () => {
+const About = ({ data }) => {
+  const recipes = data.allContentfulRecipe.nodes;
+
   return (
     <Layout>
       <main className="page">
@@ -30,9 +33,35 @@ const About = () => {
             placeholder="blurred"
           />
         </section>
+        <section className="featured-recipes">
+          <h5> Look at this Awesomesource!</h5>
+          <RecipesList recipes={recipes} />
+        </section>
       </main>
     </Layout>
   );
 };
+
+export const query = graphql`
+  query {
+    allContentfulRecipe(
+      sort: { title: ASC }
+      filter: { featured: { eq: true } }
+    ) {
+      nodes {
+        id
+        title
+        cookTime
+        prepTime
+        content {
+          tags
+        }
+        image {
+          gatsbyImageData(layout: CONSTRAINED, placeholder: DOMINANT_COLOR)
+        }
+      }
+    }
+  }
+`;
 
 export default About;
