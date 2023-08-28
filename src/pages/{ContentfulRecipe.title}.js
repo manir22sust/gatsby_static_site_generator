@@ -4,6 +4,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { BsClockHistory, BsClock, BsPeople } from "react-icons/bs";
 import Layout from "../components/Layout";
 import slugify from "slugify";
+
 const RecipeTemplate = ({ data }) => {
   const {
     title,
