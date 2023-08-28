@@ -9,6 +9,7 @@ const Tags = ({ data }) => {
   const newTags = setupTags(data.allContentfulRecipe.nodes);
   return (
     <Layout>
+      <SEO title="Tags" description="This is Tags page" />
       <main className="page">
         <section className="tags-page">
           {newTags.map((tag, index) => {
@@ -40,5 +41,3 @@ export const query = graphql`
 `;
 
 export default Tags;
-
-export const Head = () => <SEO title="Tags" description="This is Tags page" />;

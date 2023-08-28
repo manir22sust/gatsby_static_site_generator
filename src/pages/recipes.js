@@ -5,6 +5,7 @@ import { SEO } from "../components/SEO";
 const Recipes = () => {
   return (
     <Layout>
+      <SEO title="Recipes" description="This is Recipes page" />
       <main className="page">
         <AllRecipes />
       </main>
@@ -13,7 +14,3 @@ const Recipes = () => {
 };
 
 export default Recipes;
-
-export const Head = () => (
-  <SEO title="Recipes" description="This is Recipes page" />
-);

@@ -7,6 +7,7 @@ import { SEO } from "../components/SEO";
 export default function Home() {
   return (
     <Layout>
+      <SEO title="Home" description="This is Home page" />
       <main className="page">
         <header className="hero">
           <StaticImage
@@ -28,5 +29,3 @@ export default function Home() {
     </Layout>
   );
 }
-
-export const Head = () => <SEO title="Home" description="This is Home page" />;

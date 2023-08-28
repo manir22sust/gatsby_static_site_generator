@@ -9,6 +9,7 @@ const About = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title="About" description="This is About page" />
       <main className="page">
         <section className="about-page">
           <article>
@@ -65,7 +66,3 @@ export const query = graphql`
 `;
 
 export default About;
-
-export const Head = () => (
-  <SEO title="About" description="This is About page" />
-);
